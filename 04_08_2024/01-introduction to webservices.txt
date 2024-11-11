@@ -1,0 +1,70 @@
+			     				=============
+							 Webservices
+							============
+
+*) To link two or more applications running at different web-servers using HTTP protocol and data as Global Format (XML/JSON).
+
+*) Webservices is also called as Integration.
+    ex: BookMyShow App Linked with PayTM.
+
+*) One Application is called as Consumer (Client) and another one is called as Producer(Server).
+
+*) Client always makes request to Server application, using Http Method and URL.
+
+Http Method says "What todo for a Server"
+
+---- Http Request Methods-------------------
+GET     : Fetch Resource from Server
+POST    : Create a New Resource at Server
+PUT     : Modify existed Resource at Server (update set column1= *, column2=* , column3=*)
+DELETE  : Remove existed Resource at Server
+PATCH   : Partially Update existed Resource at Server(update set column = * where id = ? )
+
+Other   : TRACE, CONNECT, OPTIONS, HEAD
+Resource: (File/Image/Doc/DB Data)
+
+Q) Can we use POST Method to Get Data from Server?
+A) Actually it supports getting data. But it is not a HTTP Standard.
+
+Q) What is the difference between PUT and PATCH?
+A) PUT   : it is recomanded to use when full resource is getting modified.(update all columns and all records in database)
+   PATCH : used only for partial data update.(update only one column for a particular row in database)
+
+========================================================================
+Producer application gives Response Back using Codes/Numbers called as Http Response Status Codes
+
+ ---------------------------------------
+  Type               Code
+ ---------------------------------------
+  Information        1xx
+  Success            2xx  (200-OK)
+  Redirect           3xx
+  Client Side Error  4xx  (404-Not found)
+  Server side Error  5xx  (500-Internal Server Error)
+
+Ref:-
+https://developer.mozilla.org/en-US/docs/Web/HTTP
+
+Http Message Types:
+1. Request  : Init Line + Header + Body
+2. Response : Init Line + Header + Body
+
+Init Line will be in different format
+For Request  : Http Method   URL   Version
+For Response : Version  Status   Phrase
+
+Q) What is the difference between GET and HEAD?
+A) Get Will not support request Body. It is used to fetch data from server.
+   Head will not support both request and response body.
+   Just used to call a task at server (do not know its message, we get only response code)
+
+Q) What is the difference between GET and POST?
+A) Get Will not support request Body. It is used to fetch data from server.
+   Post is used to send data using its request body (Data is hidden here),that creates a new resource at server.
+
+Q) What is the difference between POST and PUT?
+A) Post is used to send data using its request body (Data is hidden here),that creates a new resource at server.
+   Put is used to send data using its request body (Data is hidden here),that modifies existed resource at server.
+
+
+

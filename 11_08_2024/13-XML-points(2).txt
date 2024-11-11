@@ -1,0 +1,158 @@
+=======
+XML
+======
+
+-> XML stands for Extensible Markup Language
+
+-> XML Govenred by w3c org[World Wide Web Consortium]
+
+-> XML is platform independent and language independent
+
+-> XML is used to exchange data between applications (webservices)
+
+-> XML represents data in elements format
+
+-> Every Element contains open tag and closed tag
+
+			<id>10</id>
+			<name>Sachin</name>
+
+-> In XML we can use 2 types of elements
+
+			1) Simple element
+			2) Compound element
+
+-> The element which represents data directly is called as simple element.
+
+					<id>10</id>
+
+-> The element which represents child element(s) is called as Compound Element.
+
+				<person>
+					<fname>sachin</fname>
+					<lname>tendulkar</lname>
+				</person>
+
+=============
+JAX-B API
+============
+
+=> JAX-B stands for Java Architecture For XML binding
+
+=> Using JAX-B API we can convert xml data to java object and java object to xml data.
+
+		Marshalling    : Convert Java Object to XML data
+
+		Un-Marshalling : Convert XML data to Java Object
+
+=> To perform Marshalling & Un-Marshalling we need to create Binding Classes.
+
+=> Binding Class means the class which represents XML structure
+
+Note: Upto JDK 1.8v JAX-B is part of JDK software. From JDK 1.9 version JAX-B removed from JDK.
+
+Note: From java 1.9v or above versions should have jax-b dependency.
+
+
+
+======================================== JAX-B Example ===============================================
+@XmlRootElement
+public class Person {
+
+	private Integer id;
+	private String name;
+	private String email;
+	private String gender;
+
+	private Address addr;
+
+	//setters & getters
+
+}
+
+public class Address {
+
+	private String city;
+	private String state;
+	private String country;
+	
+	//setters & getters
+
+}
+
+public class MarshallDemo {
+
+	public static void main(String[] args) throws Exception {		
+		
+		Address addr = new Address();
+		addr.setCity("Bengaluru");
+		addr.setState("Karnataka");
+		addr.setCountry("India");
+
+		Person p = new Person();
+		p.setId(101);
+		p.setName("Nitin");
+		p.setGender("Male");
+		p.setEmail("nitinmanjunath1991@gmail.com");
+		p.setAddr(addr);
+		
+
+		JAXBContext context = JAXBContext.newInstance(Person.class);
+		Marshaller marshaller = context.createMarshaller();
+		marshaller.marshal(p, new File("person.xml"));
+		System.out.println("Marshalling completed...");
+		
+	}
+}
+output
+ person.xml
+ ==========
+<person>
+	<addr>
+		<city>Bengaluru</city>
+		<country>India</country>
+		<state>Karnataka</state>
+	</addr>
+	<email>nitinmanjunath1991@gmail.com</email>
+	<gender>Male</gender>
+	<id>101</id>
+	<name>Nitin</name>
+</person>
+======================================================================
+UnMarshalling : converting XML to java object
+
+public class UnmarshalDemo {
+	
+	public static void main(String[] args) throws Exception {
+		
+		JAXBContext context = JAXBContext.newInstance(Person.class);
+		
+		Unmarshaller unmarshaller = context.createUnmarshaller();
+		
+		Person p  = (Person) unmarshaller.unmarshal(new File("person.xml"));
+		
+		System.out.println(p);
+	}
+}
+
+==================================================pom.xml===============================================
+<dependency>
+	<groupId>jakarta.xml.bind</groupId>
+	<artifactId>jakarta.xml.bind-api</artifactId>
+	<version>4.0.1</version>
+</dependency>
+		
+<dependency>
+	<groupId>com.sun.xml.bind</groupId>
+	<artifactId>jaxb-impl</artifactId>
+	<version>4.0.4</version>
+</dependency>
+
+=======================================================================================================
+
+
+
+
+
+
+
