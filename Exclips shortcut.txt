@@ -1,0 +1,63 @@
+Ctrl + N: Create a new file or project.
+
+Ctrl + Shift + S: Save all files.
+
+Ctrl + W: Close active file.
+
+Ctrl + Shift + W: Close all open files.
+
+Ctrl + F: Find text in the current file.
+
+Ctrl + H: Open search dialog.
+
+Ctrl + Shift + F: Format code.
+
+Ctrl + D: Delete current line.
+
+Ctrl + Q: Navigate to the last edited location.
+
+Ctrl + Shift + L: Show all shortcuts.
+
+Ctrl + E: Switch between open editors.
+
+Ctrl + Shift + T: Open type.
+
+Ctrl + O: Show outline of the current file.
+
+Ctrl + .: Move to the next error/issue.
+
+Ctrl + ,: Move to the previous error/issue.
+
+Ctrl + Shift + Up/Down: Navigate to previous/next method.
+
+Ctrl + Shift + H: Open call hierarchy.
+
+Ctrl + Shift + R: Open resource.
+
+Ctrl + Shift + P: Jump to matching bracket.
+
+Ctrl + Shift + P: Jump to matching bracket.
+
+Ctrl + Shift + O: Organize imports.
+
+Alt + Shift + W: Show in Package Explorer.
+
+Ctrl + Space: Content assist (autocomplete).
+
+Alt + Shift + S: Open source menu.
+
+Ctrl + /: Comment/uncomment line.
+
+Ctrl + Shift + /: Add block comment.
+
+Ctrl + Shift + \: Remove block comment.
+
+Alt + Shift + M: Extract method.
+
+Alt + Shift + L: Extract local variable.
+
+Ctrl + Alt + K: Show occurrences of the selected variable.
+
+Ctrl + Alt + K: Show occurrences of the selected variable.
+
+Use Window > Preferences > General > Keys to customize additional shortcuts as needed.
