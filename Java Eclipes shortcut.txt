@@ -62,4 +62,32 @@ Ctrl + Alt + K: Show occurrences of the selected variable.
 
 Ctrl + Alt + K: Show occurrences of the selected variable.
 
+Ctrl+3 : Open Quick Access.
+
+Ctrl+Shift+E - Switch between editors.
+
+Alt+Arrow Up/Down - Move line up/down.
+
+Ctrl+Alt+Arrow Up/Down - Duplicate current line.
+
+Ctrl+L - Go to line.
+
+Ctrl+M - Maximize/Minimize editor.
+
+Ctrl+Shift+X - Convert selection to uppercase.
+
+Ctrl+Shift+Y - Convert selection to lowercase.
+
+Alt+Shift+M - Extract to method.
+
+F3 - Open declaration.
+
+Ctrl+T - Show type hierarchy.
+
+F4 - Open type hierarchy.
+
+Ctrl+W - Close current editor.
+
+Ctrl+Shift+W - Close all editors
+
 Use Window > Preferences > General > Keys to customize additional shortcuts as needed.

@@ -1,0 +1,64 @@
+Ctrl + N: Create a new file or project.
+
+Ctrl + Shift + S: Save all files.
+
+Ctrl + W: Close active file.
+
+Ctrl + D: Delete current line.
+
+Ctrl + Q: Navigate to the last edited location.
+
+Ctrl + H: Open search dialog.
+
+Ctrl+3 : Open Quick Access.
+
+Ctrl+L - Go to line.
+
+F4 - Open type hierarchy.
+
+Ctrl+M - Maximize/Minimize editor.
+
+Ctrl + E: Switch between open editors.
+
+Ctrl+Shift+E - Switch between editors.
+
+Ctrl + O: Show outline of the current file.
+
+Ctrl + .: Move to the next error/issue.
+
+Ctrl+T - Show type hierarchy.
+
+Ctrl + ,: Move to the previous error/issue.
+
+Ctrl + Shift + W: Close all open files.
+
+Ctrl + Shift + L: Show all shortcuts.
+
+Ctrl + Shift + T: Open type.
+
+Ctrl + Shift + Up/Down: Navigate to previous/next method.
+
+Ctrl + Shift + H: Open call hierarchy.
+
+Ctrl + Shift + P: Jump to matching bracket.
+
+Ctrl+Shift+X - Convert selection to uppercase.
+
+Ctrl+Shift+Y - Convert selection to lowercase.
+
+Ctrl + Shift + /: Add block comment.
+
+Ctrl + Shift + \: Remove block comment.
+
+Alt + Shift + S: Open source menu.
+
+Alt + Shift + M: Extract method.
+
+Alt + Shift + L: Extract local variable.
+
+Alt+Arrow Up/Down - Move line up/down.
+
+Ctrl+Alt+Arrow Up/Down - Duplicate current line.
+
+Use Window > Preferences > General > Keys to customize additional shortcuts as needed.
+
